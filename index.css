@@ -83,15 +83,17 @@ main {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 70% 0%;
+  transition: background 350ms;
 }
 
-.hero:hover, .hero:active {
+.hero:hover,
+.hero:active {
   background: linear-gradient(
-    180deg,
-    rgba(255, 0, 0, 0.3) 0%,
-    rgba(255, 255, 255, 0.7) 50%
-  ),
-  url("assets/hero-img.jpg");
+      180deg,
+      rgba(255, 0, 0, 0.3) 0%,
+      rgba(255, 255, 255, 0.7) 50%
+    ),
+    url("assets/hero-img.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 70% 0%;
@@ -166,12 +168,17 @@ main {
   width: 50%;
   margin: auto;
   margin-bottom: 3vw;
+  text-align: center;
 }
 
-.tribute-details__img > img {
-  display: block;
+.tribute-details__img img,
+.tribute-details__img > picture {
   max-width: 100%;
   margin-bottom: 1.5vw;
+}
+
+.tribute-details__img img {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
 .tribute-details__img > figcaption {
